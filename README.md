@@ -2,6 +2,7 @@
 
 ## 실행하기 전에
 
+- `yarn install`
 - [prometheus를 설치해주세요.](https://prometheus.io/docs/prometheus/latest/installation/)
 
 ## 기본 설정
