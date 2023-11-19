@@ -7,7 +7,7 @@
   "author": "Max Kim",
   "license": "MIT",
   "scripts": {
-    "start": "yarn start:node && yarn start:prom",
+    "start": "yarn start:node & yarn start:prom",
     "start:node": "node build.js && node dist/server.mjs ",
     "start:prom": "prometheus --config.file=prometheus.yml"
   },
