@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-server-monitoring-example",
+  "version": "1.0.0",
+  "description": "노드 모니터링 케이스 스터디",
+  "type": "module",
+  "repository": "https://github.com/MaxKim-J/nodejs-server-monitoring-example",
+  "author": "Max Kim",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn start:node && yarn start:prom",
+    "start:node": "node build.js && node dist/server.mjs ",
+    "start:prom": "prometheus --config.file=prometheus.yml"
+  },
+  "dependencies": {
+    "esbuild": "^0.19.3",
+    "express": "^4.18.2",
+    "prom-client": "^15.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
